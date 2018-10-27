@@ -440,11 +440,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212579015820294168, guid: 90d0917fa2bcdd043984f755e708cf82,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d0917fa2bcdd043984f755e708cf82, type: 2}
   m_IsPrefabAsset: 0
@@ -22470,11 +22465,11 @@ Prefab:
     - target: {fileID: 20864964580170222, guid: 3a259177d3123471b85e8ed9f1a5d22f,
         type: 2}
       propertyPath: orthographic size
-      value: 3.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4925643040211160, guid: 3a259177d3123471b85e8ed9f1a5d22f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a259177d3123471b85e8ed9f1a5d22f, type: 2}
