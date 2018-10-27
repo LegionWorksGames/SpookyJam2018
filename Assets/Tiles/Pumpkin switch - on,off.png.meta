@@ -1,25 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 101e13a2c95a247ffbe8cf5a4a42794b
 TextureImporter:
   fileIDToRecycleName:
     21300000: Pumpkin switch - on,off_0
     21300002: Pumpkin switch - on,off_1
     21300004: Pumpkin switch - on,off_2
-=======
-guid: 078a987e11233d044bb343b66154416b
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> 5c9df4ea2074065b5e8ee16e6427163d6d922a5b
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
     enableMipMap: 0
-=======
-    enableMipMap: 1
->>>>>>> 5c9df4ea2074065b5e8ee16e6427163d6d922a5b
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -47,7 +37,6 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -100
-<<<<<<< HEAD
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -55,15 +44,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-=======
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
->>>>>>> 5c9df4ea2074065b5e8ee16e6427163d6d922a5b
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,15 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-=======
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
->>>>>>> 5c9df4ea2074065b5e8ee16e6427163d6d922a5b
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -98,7 +72,6 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< HEAD
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -130,7 +103,7 @@ TextureImporter:
         serializedVersion: 2
         x: 14
         y: 134
-        width: 62
+        width: 64
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,7 +112,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acdda8e1a575c48e2a8f8ca806cc0330
+      spriteID: e1988a16533eb4c2fbfe51de543b57a2
       vertices: []
       indices: 
       edges: []
@@ -148,9 +121,9 @@ TextureImporter:
       name: Pumpkin switch - on,off_1
       rect:
         serializedVersion: 2
-        x: 13
+        x: 14
         y: 71
-        width: 67
+        width: 64
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,7 +132,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 580d34c1747d84b9385a4b21262bf634
+      spriteID: 6ca8b5fc0e1e04fb7b91a0e81c7c22ae
       vertices: []
       indices: 
       edges: []
@@ -168,9 +141,9 @@ TextureImporter:
       name: Pumpkin switch - on,off_2
       rect:
         serializedVersion: 2
-        x: 13
+        x: 14
         y: 8
-        width: 67
+        width: 64
         height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -179,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb740c8ef10684e8ca117534a79f4a6a
+      spriteID: 4e9fad98880b04ba4a638c2f385ab597
       vertices: []
       indices: 
       edges: []
@@ -187,16 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a258daecb7cfe4e2f8e98c3823d04807
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
-    spriteID: 
->>>>>>> 5c9df4ea2074065b5e8ee16e6427163d6d922a5b
+    spriteID: 2e41341fdf1154ced8b996c488f6bed5
     vertices: []
     indices: 
     edges: []
