@@ -6,7 +6,7 @@ public class DialogueConversation : MonoBehaviour {
 
 	DialogueTrigger[] dialogues;
 	int currentDialogue;
-	bool trigger;
+	public bool trigger;
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +15,19 @@ public class DialogueConversation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!DialogueManager.instance.dialogueRunning)
+		if (!DialogueManager.instance.dialogueRunning && trigger)
 		{
 			Invoke("RunNextDialogue", 1);
 			DialogueManager.instance.dialogueRunning = true;
 		}
 	}
+    public void TriggerDialogueConversation()
+    {
+        trigger = true;
+    }
 
-	void RunNextDialogue()
+
+    void RunNextDialogue()
 	{
 		if (currentDialogue < dialogues.Length)
 		{

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 	public float MoveSpeed = 5;
+    bool continuousMovement;
 	Animator anim;
+    AudioSource audioSource;
 	Rigidbody2D rbody;
 	Vector3 facing;
 	float speed;
@@ -14,7 +16,9 @@ public class PlayerController : MonoBehaviour {
 		speed = 0;
 		anim = GetComponent<Animator>();
 		rbody = GetComponent<Rigidbody2D>();
-	}
+        audioSource = GetComponent<AudioSource>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,6 +43,18 @@ public class PlayerController : MonoBehaviour {
 
 	void move(){
 		if(this.speed > 0)
-		rbody.MovePosition(transform.position + this.facing * this.MoveSpeed * Time.deltaTime);
+        {
+            if(continuousMovement == false)
+            {
+                audioSource.Play();
+            }
+            continuousMovement = true;
+            rbody.MovePosition(transform.position + this.facing * this.MoveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            continuousMovement = false;
+            audioSource.Stop();
+        }
 	}
 }

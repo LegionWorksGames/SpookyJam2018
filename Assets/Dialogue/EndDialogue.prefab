@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1374434128066940}
+  m_IsPrefabAsset: 1
+--- !u!1 &1374434128066940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4057037513050194}
+  - component: {fileID: 114062781085386674}
+  - component: {fileID: 114177230387799784}
+  - component: {fileID: 114268584817093530}
+  - component: {fileID: 114709337581003620}
+  - component: {fileID: 114482224687497636}
+  - component: {fileID: 114135816833335766}
+  - component: {fileID: 114253941764264146}
+  m_Layer: 0
+  m_Name: EndDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4057037513050194
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1065.4116, y: -193.00804, z: -4.9053392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114062781085386674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925c951ebd1fbab49860244e23463278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 1
+--- !u!114 &114135816833335766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Pumpkin
+    characterSpeed: 0
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - Can..can I get that from you or..
+--- !u!114 &114177230387799784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Pumpkin
+    characterSpeed: 0
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - You there! Give me back my towel!
+--- !u!114 &114253941764264146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Great Hedge Mage
+    characterSpeed: 0.05
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - FOOL! You think to trick the Great Hedge Mage?! WAKAKAKAKAK~! You may have bested
+      me this day but I shall return!
+--- !u!114 &114268584817093530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Bagheaded Guy
+    characterSpeed: 0.05
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - You fool! I am the Great Hedge Mage and this towel is my glorious cape! WAKAKAKAKAK~
+--- !u!114 &114482224687497636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Great Hedge Mage
+    characterSpeed: 0.05
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - WAKAKAKA...KAK?
+--- !u!114 &114709337581003620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374434128066940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Pumpkin
+    characterSpeed: 0
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - It's definitely a towel. I definitely have dried my entire body with that.
