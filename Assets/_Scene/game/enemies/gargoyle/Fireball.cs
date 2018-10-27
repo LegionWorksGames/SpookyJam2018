@@ -17,6 +17,9 @@ public class Fireball : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
+		if(col.gameObject.tag == "Player"){
+			LevelManager.GameOver();
+		}
 		Destroy(gameObject);
 	}
 }

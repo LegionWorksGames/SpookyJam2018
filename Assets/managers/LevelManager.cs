@@ -22,6 +22,10 @@ public class LevelManager : MonoBehaviour {
 		}
 		CurrentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
 	}
+	public static void GameOver(){
+		SceneManager.LoadScene(1);
+	}
+
 
 	//  When provided a string that matches a scene name that 
 	//  exists in the build order it will load that level.
