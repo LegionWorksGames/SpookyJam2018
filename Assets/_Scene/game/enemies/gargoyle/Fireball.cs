@@ -5,8 +5,15 @@ using UnityEngine;
 public class Fireball : MonoBehaviour {
 	public float Speed = 10;
 	public Vector3 Direction = new Vector3(-1, 0, 0);
+	public Transform Daddy;
+	public float RangeFromDaddy;
 	Rigidbody2D rbody;
 	// Use this for initialization
+	public void init(Transform d, float rd, Vector3 ld){
+		this.Daddy = d;
+		this.RangeFromDaddy = rd;
+		this.Direction = ld;
+	}
 	void Start () {
 		this.rbody = GetComponent<Rigidbody2D>();
 	}
@@ -14,12 +21,14 @@ public class Fireball : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		rbody.MovePosition(transform.position + this.Direction * this.Speed * Time.deltaTime);
+		if(Mathf.Abs((transform.position - this.Daddy.position).magnitude) > this.RangeFromDaddy)
+			Destroy(gameObject);
 	}
 
-	void OnCollisionEnter2D(Collision2D col){
-		if(col.gameObject.tag == "Player"){
+	void OnTriggerEnter2D(Collider2D col){
+		if(col.tag == "Player"){
 			LevelManager.GameOver();
 		}
-		Destroy(gameObject);
+		
 	}
 }

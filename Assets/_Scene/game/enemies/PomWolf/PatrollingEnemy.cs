@@ -25,7 +25,7 @@ public class PatrollingEnemy : MonoBehaviour {
 		t.Sort((Transform a, Transform b) => {
 			return a.name.CompareTo(b.name);
 		});
-		this.targetsList = t.ToArray();guiText
+		this.targetsList = t.ToArray();
 		this.currentTarget = this.targetsList[0];
 	}
 	
