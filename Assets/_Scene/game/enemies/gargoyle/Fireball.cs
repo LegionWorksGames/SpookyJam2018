@@ -7,6 +7,7 @@ public class Fireball : MonoBehaviour {
 	public Vector3 Direction = new Vector3(-1, 0, 0);
 	public Transform Daddy;
 	public float RangeFromDaddy;
+	public TargetType target = TargetType.player;
 	Rigidbody2D rbody;
 	// Use this for initialization
 	public void init(Transform d, float rd, Vector3 ld){
@@ -26,9 +27,26 @@ public class Fireball : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if(col.tag == "Player"){
-			LevelManager.GameOver();
+		if(this.target == TargetType.player){
+			if(col.tag == "Player"){
+				PlayerController player = col.GetComponent<PlayerController>();
+				if(player.HasMirror){
+					this.Direction = player.facing;
+					this.target = TargetType.enemy;
+				}
+				else
+					LevelManager.GameOver();
+			}
 		}
-		
+		else if(this.target == TargetType.enemy){
+			if(col.tag == "Enemy"){
+				Destroy(col.gameObject);
+			}
+			Destroy(gameObject);
+		} 
 	}
+}
+
+public enum TargetType{
+	player, enemy
 }

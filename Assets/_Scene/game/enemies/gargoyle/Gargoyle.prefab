@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 114763605226217312}
   m_Layer: 0
   m_Name: Gargoyle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +84,10 @@ MonoBehaviour:
   Fireball: {fileID: 1024675780770016, guid: d2b9178fdafb9904ba2266f1e6794a89, type: 2}
   FireballEmitter: {fileID: 1037274936074870}
   FireRate: 5
+  Range: 5
+  DespawnRange: 50
+  fireCooldown: 0.9865371
+  ThisPlayerDistance: 2.2613783
 --- !u!212 &212579015820294168
 SpriteRenderer:
   m_ObjectHideFlags: 1

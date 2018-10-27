@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+	public bool HasMirror = false;
 	public float MoveSpeed = 5;
     bool continuousMovement;
 	Animator anim;
     AudioSource audioSource;
 	Rigidbody2D rbody;
-	Vector3 facing;
+	public Vector3 facing;
 	float speed;
 	// Use this for initialization
 	void Start () {
