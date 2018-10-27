@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueConversation : MonoBehaviour {
 
@@ -34,5 +35,10 @@ public class DialogueConversation : MonoBehaviour {
 			dialogues[currentDialogue].TriggerDialogue();
 			currentDialogue++;
 		}
+        else 
+        {
+            SceneManager.LoadScene("03a Win");
+        }
+       
 	}
 }
