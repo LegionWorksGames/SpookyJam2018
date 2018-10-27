@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fireball: {fileID: 1024675780770016, guid: d2b9178fdafb9904ba2266f1e6794a89, type: 2}
   FireballEmitter: {fileID: 1037274936074870}
-  FireRate: 10
+  FireRate: 5
 --- !u!212 &212579015820294168
 SpriteRenderer:
   m_ObjectHideFlags: 1
