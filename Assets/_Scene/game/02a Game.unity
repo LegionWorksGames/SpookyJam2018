@@ -415,7 +415,7 @@ MonoBehaviour:
   Targets: {fileID: 1629570143}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 1.5
 --- !u!95 &98592490
 Animator:
   serializedVersion: 3
@@ -1090,6 +1090,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &425647336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1938157747233904, guid: 3a26ed17933e656429426e8fda5a5857,
+    type: 2}
+  m_PrefabInternal: {fileID: 1259578444}
+--- !u!70 &425647339
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425647336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.25}
+  m_Size: {x: 0.5, y: 0.5}
+  m_Direction: 0
 --- !u!1001 &431746837
 Prefab:
   m_ObjectHideFlags: 0
@@ -1427,7 +1447,7 @@ MonoBehaviour:
   Targets: {fileID: 885349725}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 2.5
 --- !u!95 &577809216
 Animator:
   serializedVersion: 3
@@ -6980,11 +7000,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4779453792286238, guid: 90d0917fa2bcdd043984f755e708cf82, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 24.886944
+      value: 27.22
       objectReference: {fileID: 0}
     - target: {fileID: 4779453792286238, guid: 90d0917fa2bcdd043984f755e708cf82, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.859375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4779453792286238, guid: 90d0917fa2bcdd043984f755e708cf82, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7488,7 +7508,7 @@ MonoBehaviour:
   Targets: {fileID: 1861806252}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 3
 --- !u!95 &790157045
 Animator:
   serializedVersion: 3
@@ -7854,7 +7874,7 @@ MonoBehaviour:
   Targets: {fileID: 1299380731}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 3
 --- !u!95 &930475724
 Animator:
   serializedVersion: 3
@@ -23850,7 +23870,13 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: bbe331d1016fe4f4eb58e63c8e4bafb5, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 114448940714066670, guid: 3a26ed17933e656429426e8fda5a5857,
+        type: 2}
+      propertyPath: MoveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61508581406792078, guid: 3a26ed17933e656429426e8fda5a5857, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3a26ed17933e656429426e8fda5a5857, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1263116336
@@ -24625,7 +24651,7 @@ MonoBehaviour:
   Targets: {fileID: 1035694231}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 3
 --- !u!95 &1741799037
 Animator:
   serializedVersion: 3
@@ -25179,7 +25205,7 @@ MonoBehaviour:
   Targets: {fileID: 1883168778}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 2
 --- !u!95 &1972485356
 Animator:
   serializedVersion: 3
@@ -25373,7 +25399,7 @@ MonoBehaviour:
   Targets: {fileID: 8528918}
   currentTargetInt: 0
   targetsList: []
-  Speed: 5
+  Speed: 3
 --- !u!95 &2011273595
 Animator:
   serializedVersion: 3
