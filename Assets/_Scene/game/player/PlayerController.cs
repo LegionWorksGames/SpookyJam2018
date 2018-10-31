@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	public bool HasMirror = false;
 	public bool HasWand = false;
+	public bool HasBigLight = false;
 	public float MoveSpeed = 5;
     bool continuousMovement, canMove = true;
 	Animator anim;
