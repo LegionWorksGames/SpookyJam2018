@@ -54,7 +54,6 @@ public class ChargingEnemy : MonoBehaviour {
 			// If it hits something...
 			if (hit.collider != null)
 			{
-				print(hit.collider.name);
 				if (hit.collider.CompareTag("Player"))
 				{
 					charging = true;

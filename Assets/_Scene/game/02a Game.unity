@@ -30934,6 +30934,11 @@ Prefab:
       propertyPath: MoveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114448940714066670, guid: 3a26ed17933e656429426e8fda5a5857,
+        type: 2}
+      propertyPath: HasWand
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61508581406792078, guid: 3a26ed17933e656429426e8fda5a5857, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3a26ed17933e656429426e8fda5a5857, type: 2}
@@ -32121,7 +32126,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -32656,7 +32661,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:

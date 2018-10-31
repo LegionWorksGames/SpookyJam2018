@@ -7,6 +7,7 @@ public class HedgeController : MonoBehaviour {
 	CompositeCollider2D col;
 	Renderer rend;
 	public bool active;
+	bool playerOnHedge;
 	PlayerController player;
 
 	// Use this for initialization
@@ -25,8 +26,10 @@ public class HedgeController : MonoBehaviour {
 	}
 	public bool PlayerInHedge()
 	{
-		print(gameObject.name + " " + col.bounds.Contains(player.transform.position));
-		return Physics2D.IsTouching(col, player.GetComponent<CapsuleCollider2D>());
+		print(gameObject.name + " switched " + playerOnHedge);
+		return playerOnHedge;
+		// print(gameObject.name + " " + col.bounds.Contains(player.transform.position));
+		//return Physics2D.IsTouching(col, player.GetComponent<CapsuleCollider2D>());
 	}
 
 	public void SwitchHedges()
@@ -34,5 +37,23 @@ public class HedgeController : MonoBehaviour {
 		active = !active;
 		rend.enabled = active;
 		col.isTrigger = !active;
+	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.CompareTag("Player"))
+		{
+			print("Entered");
+			playerOnHedge = true;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.gameObject.CompareTag("Player"))
+		{
+			print("exit");
+			playerOnHedge = false;
+		}
 	}
 }
