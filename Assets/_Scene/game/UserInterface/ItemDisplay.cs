@@ -6,23 +6,34 @@ using UnityEngine.UI;
 public class ItemDisplay : MonoBehaviour {
 
 	PlayerController player;
-	[SerializeField] Image mirror;
-	bool hasMirror;
+	[SerializeField] Image mirror, wand, flashlight;
+	[SerializeField] Sprite bigLight;
+	bool hasBigLight;
 
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<PlayerController>();
-		mirror.enabled = hasMirror;
+		mirror.gameObject.SetActive(false);
+		wand.gameObject.SetActive(false);
+		hasBigLight = player.HasBigLight;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (player)
 		{
-			if (hasMirror != player.HasMirror)
+			if (mirror.gameObject.activeSelf != player.HasMirror)
 			{
-				hasMirror = player.HasMirror;
-				mirror.enabled = hasMirror;
+				mirror.gameObject.SetActive(player.HasMirror);
+			}
+			if (wand.gameObject.activeSelf != player.HasWand)
+			{
+				wand.gameObject.SetActive(player.HasWand);
+			}
+			if (!hasBigLight && player.HasBigLight)
+			{
+				flashlight.sprite = bigLight;
+				hasBigLight = true;
 			}
 		}
 	}
