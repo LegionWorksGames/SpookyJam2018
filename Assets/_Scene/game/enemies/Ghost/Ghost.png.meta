@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 43f07d5591d404554b2f0d4dc068b7b0
+guid: 46c9a940b8b314292bd586a60fc3f4b0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Tiles_0
-    21300002: Tiles_1
-    21300004: Tiles_2
-    21300006: Tiles_3
-    21300008: Tiles_4
-    21300010: Tiles_5
+    21300000: Ghost_0
+    21300002: Ghost_1
+    21300004: Ghost_2
+    21300006: Ghost_3
+    21300008: Ghost_4
+    21300010: Ghost_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 131
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,17 +87,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -119,17 +108,28 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_0
+      name: Ghost_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 144
-        width: 135
-        height: 135
+        x: 0
+        y: 200
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fbbb5aaf7dbe494686bc947f1af6bf3
+      spriteID: 1faa5d0cf987e3c43a651ba223dd910e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_1
+      name: Ghost_1
       rect:
         serializedVersion: 2
-        x: 142
-        y: 144
-        width: 135
-        height: 135
+        x: 97
+        y: 200
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +157,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7b716f859a7f4d4ca882cbdcc668cda
+      spriteID: a104e20d23f0f1449a03e518e5994829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_2
+      name: Ghost_2
       rect:
         serializedVersion: 2
-        x: 279
-        y: 144
-        width: 135
-        height: 135
+        x: 0
+        y: 100
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,19 +177,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a52c7baf4c2a049308874a9677646f2a
+      spriteID: 7be132544efe29a4aa8110366d4f2bf8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_3
+      name: Ghost_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 7
-        width: 135
-        height: 135
+        x: 97
+        y: 100
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,19 +197,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96abc4b07da0644ce8f28c6893880c04
+      spriteID: c6e40b4b6963f2e409b03ab70752ea15
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_4
+      name: Ghost_4
       rect:
         serializedVersion: 2
-        x: 142
-        y: 7
-        width: 135
-        height: 135
+        x: 0
+        y: 0
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,19 +217,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8933efb9343be46ba9a2303a552bb83d
+      spriteID: 9ffe6d7e0a1808c4e86e657acb629fe1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_5
+      name: Ghost_5
       rect:
         serializedVersion: 2
-        x: 279
-        y: 7
-        width: 135
-        height: 135
+        x: 97
+        y: 0
+        width: 97
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,7 +237,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c9f8bc51bf1446fbb27e73a1e3cfc65
+      spriteID: 05dbd079f4b05574c9e406a968dc7f67
       vertices: []
       indices: 
       edges: []
@@ -245,7 +245,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f876e9ae663f42fba64feeb02314bde
+    spriteID: b69c6595ddbb33544b4bc49697e1aabe
     vertices: []
     indices: 
     edges: []

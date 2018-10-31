@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour {
 		CurrentSceneBuildIndex = SceneManager.GetActiveScene().buildIndex;
 	}
 	public static void GameOver(){
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(5);
 	}
 
 

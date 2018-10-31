@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -35,7 +35,7 @@ public class Fireball : MonoBehaviour {
 					this.target = TargetType.enemy;
 				}
 				else
-					LevelManager.GameOver();
+					GameManager.instance.PlayerHit();
 			}
 		}
 		else if(this.target == TargetType.enemy){

@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: a0d8b884997527645ac6830dcf684cf6
+guid: 46c6709089eab0b49b85fa64b51828af
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: HedgeTiles_0
-    21300002: HedgeTiles_1
-    21300004: HedgeTiles_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -43,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 131
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.4}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,71 +115,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: HedgeTiles_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 4
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0332c5a6bc100554abc83afa4ca286e5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HedgeTiles_1
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 4
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6bb4f0ecea5f8243a4650bbab698584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HedgeTiles_2
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 4
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aab2c4ea639fe1a4bb93126f1c287388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ab1bebb736b84fd44a7f03763cb40f9b
+    spriteID: f49be7998440f8c4fa54ea57d7a5d270
     vertices: []
     indices: 
     edges: []

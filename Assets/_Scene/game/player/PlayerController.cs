@@ -1,11 +1,12 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 	public bool HasMirror = false;
+	public bool HasWand = false;
 	public float MoveSpeed = 5;
-    bool continuousMovement;
+    bool continuousMovement, canMove = true;
 	Animator anim;
     AudioSource audioSource;
 	Rigidbody2D rbody;
@@ -29,8 +30,15 @@ public class PlayerController : MonoBehaviour {
 			getTransformVector(x, y);
 		else
 			this.speed = 0;
-		handleAnimator();
-		move();
+		if (canMove)
+		{
+			handleAnimator();
+			move();
+		}
+		if (HasWand && Input.GetButtonDown("Activate"))
+		{
+			UseWand();
+		}
 	}
 	void getTransformVector(float x, float y){
 		this.facing = new Vector2(x, y).normalized;
@@ -57,5 +65,35 @@ public class PlayerController : MonoBehaviour {
             continuousMovement = false;
             audioSource.Stop();
         }
+	}
+
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		
+		if (coll.gameObject.tag == "Enemy")
+		{
+			print("Doing This");
+			Vector2 dir = transform.position - coll.transform.position;
+			dir.Normalize();
+			rbody.AddForce(dir * 20, ForceMode2D.Impulse);
+			StartCoroutine(KnockBack());
+		}
+	}
+	IEnumerator KnockBack()
+	{
+		canMove = false;
+		yield return new WaitForSeconds(0.05f);
+		rbody.velocity = Vector2.zero;
+		canMove = true;
+	}
+
+	void UseWand()
+	{
+		HedgeController[] hedges = FindObjectsOfType<HedgeController>();
+		if (!hedges[0].PlayerInHedge() && !hedges[1].PlayerInHedge())
+		{
+			hedges[0].SwitchHedges();
+			hedges[1].SwitchHedges();
+		}
 	}
 }

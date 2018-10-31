@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,7 +48,7 @@ public class PatrollingEnemy : MonoBehaviour {
 	}
 
 	 void OnCollisionEnter2D(Collision2D col){
-		 if(col.gameObject.tag == "Player")
-			 LevelManager.GameOver();
+		if (col.gameObject.tag == "Player")
+			GameManager.instance.PlayerHit();
 	}
 }
