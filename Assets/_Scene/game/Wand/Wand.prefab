@@ -19,10 +19,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4357156315800734}
+<<<<<<< HEAD
   - component: {fileID: 61369640031319264}
   - component: {fileID: 212243518191877152}
   - component: {fileID: 114001838333571674}
   - component: {fileID: 114176991120872162}
+=======
+  - component: {fileID: 65122806348141660}
+  - component: {fileID: 212488189496315376}
+  - component: {fileID: 114740127379662800}
+>>>>>>> ee2c9fcd1805700a3022a98c8baebaec2ff991b7
   m_Layer: 0
   m_Name: Wand
   m_TagString: Untagged
@@ -36,19 +42,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784222366493942}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.7, y: 1.62, z: 0}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.9497557, y: -17.526552, z: 0}
+>>>>>>> ee2c9fcd1805700a3022a98c8baebaec2ff991b7
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!61 &61369640031319264
 BoxCollider2D:
+=======
+--- !u!65 &65122806348141660
+BoxCollider:
+>>>>>>> ee2c9fcd1805700a3022a98c8baebaec2ff991b7
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784222366493942}
+<<<<<<< HEAD
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -69,6 +86,15 @@ BoxCollider2D:
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &114001838333571674
+=======
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114740127379662800
+>>>>>>> ee2c9fcd1805700a3022a98c8baebaec2ff991b7
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d58d5636893784496d08d4bd3c6535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!114 &114176991120872162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,6 +126,9 @@ MonoBehaviour:
     - 'Looks like a... Wand? There is a note on here. It says:'
     - With this you can control some plants. Press "Space" to use it.
 --- !u!212 &212243518191877152
+=======
+--- !u!212 &212488189496315376
+>>>>>>> ee2c9fcd1805700a3022a98c8baebaec2ff991b7
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
