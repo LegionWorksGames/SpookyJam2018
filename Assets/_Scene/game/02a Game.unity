@@ -789,6 +789,11 @@ Prefab:
       propertyPath: wall
       value: 
       objectReference: {fileID: 50076952}
+    - target: {fileID: 114564608749146262, guid: 45a9d2b552b8b437d85dd5924d4f9254,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I heard a noise from the house just now.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45a9d2b552b8b437d85dd5924d4f9254, type: 2}
   m_IsPrefabAsset: 0
@@ -4981,8 +4986,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 8, y: -19, z: 0}
     second:
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5260,8 +5265,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 8, y: -17, z: 0}
     second:
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -12646,9 +12651,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f5a249dff10a64a80af20db77e15338e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 28
+  - m_RefCount: 30
     m_Data: {fileID: 11400000, guid: 58823caadca957c43bac81d77e728bf9, type: 2}
-  - m_RefCount: 370
+  - m_RefCount: 368
     m_Data: {fileID: 11400000, guid: 9cd2b991d91b0455eb08c020fc1e9cbc, type: 2}
   - m_RefCount: 60
     m_Data: {fileID: 11400000, guid: 4037ec9393e994768bd442448623ca88, type: 2}
@@ -12661,9 +12666,9 @@ Tilemap:
     m_Data: {fileID: 21300008, guid: 43f07d5591d404554b2f0d4dc068b7b0, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 28
+  - m_RefCount: 30
     m_Data: {fileID: 21300000, guid: aac24a340e7ef8745a6282f7341f4bd8, type: 3}
-  - m_RefCount: 370
+  - m_RefCount: 368
     m_Data: {fileID: 21300004, guid: 43f07d5591d404554b2f0d4dc068b7b0, type: 3}
   - m_RefCount: 60
     m_Data: {fileID: 21300010, guid: 43f07d5591d404554b2f0d4dc068b7b0, type: 3}
@@ -12796,7 +12801,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4057037513050194, guid: c113334ffe5574663a656668f22b9452, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 34.63
+      value: 37.05
       objectReference: {fileID: 0}
     - target: {fileID: 4057037513050194, guid: c113334ffe5574663a656668f22b9452, type: 2}
       propertyPath: m_LocalPosition.z
@@ -33623,6 +33628,11 @@ Prefab:
       propertyPath: m_Name
       value: Switch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114564608749146262, guid: 45a9d2b552b8b437d85dd5924d4f9254,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I heard a noise from the middle of the maze just now.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45a9d2b552b8b437d85dd5924d4f9254, type: 2}
   m_IsPrefabAsset: 0
@@ -33799,7 +33809,7 @@ GameObject:
   - component: {fileID: 1807059161}
   - component: {fileID: 1807059160}
   - component: {fileID: 1807059159}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: OrangeHedge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33962,6 +33972,14 @@ CompositeCollider2D:
         Y: 69847328
       - X: -29847328
         Y: 69847328
+    - - X: 90152672
+        Y: -159847328
+      - X: 79847328
+        Y: -159847328
+      - X: 79847328
+        Y: -170152672
+      - X: 90152672
+        Y: -170152672
   m_CompositePaths:
     m_Paths:
     - - {x: 1.0152671, y: 28.015268}
@@ -34026,6 +34044,10 @@ CompositeCollider2D:
       - {x: -4.0152674, y: 8.015267}
       - {x: -4.0152674, y: 6.984733}
       - {x: -2.9847329, y: 6.984733}
+    - - {x: 9.015267, y: -15.984733}
+      - {x: 7.984733, y: -15.984733}
+      - {x: 7.984733, y: -17.015268}
+      - {x: 9.015267, y: -17.015268}
   m_VertexDistance: 0.0005
 --- !u!50 &1807059160
 Rigidbody2D:
@@ -34122,6 +34144,15 @@ Tilemap:
   m_GameObject: {fileID: 1807059157}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 8, y: -17, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -4, y: 7, z: 0}
     second:
       m_TileIndex: 0
@@ -34259,17 +34290,17 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: c879524b3a1b7d64ba2ea2a30fa4eb8a, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {fileID: 21300004, guid: a0d8b884997527645ac6830dcf684cf6, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data:
       e00: 1
       e01: 0
@@ -34288,12 +34319,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 15
+  - m_RefCount: 16
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -4, y: 0, z: 0}
-  m_Size: {x: 26, y: 28, z: 1}
+  m_Origin: {x: -4, y: -17, z: 0}
+  m_Size: {x: 26, y: 45, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -34397,6 +34428,15 @@ Tilemap:
   m_GameObject: {fileID: 1817612713}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 8, y: -19, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -3, y: 8, z: 0}
     second:
       m_TileIndex: 0
@@ -34516,17 +34556,17 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: c3f39c116b0c07d4da154b8d31d48466, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c879524b3a1b7d64ba2ea2a30fa4eb8a, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 12
+  - m_RefCount: 13
     m_Data: {fileID: 21300002, guid: a0d8b884997527645ac6830dcf684cf6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300004, guid: a0d8b884997527645ac6830dcf684cf6, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data:
       e00: 1
       e01: 0
@@ -34545,12 +34585,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -13, y: -14, z: 0}
-  m_Size: {x: 33, y: 42, z: 1}
+  m_Origin: {x: -13, y: -19, z: 0}
+  m_Size: {x: 33, y: 47, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -34685,6 +34725,14 @@ CompositeCollider2D:
         Y: 79847328
       - X: 40152672
         Y: 79847328
+    - - X: 90152672
+        Y: -179847328
+      - X: 79847328
+        Y: -179847328
+      - X: 79847328
+        Y: -190152672
+      - X: 90152672
+        Y: -190152672
   m_CompositePaths:
     m_Paths:
     - - {x: 3.0152671, y: 27.015268}
@@ -34735,6 +34783,10 @@ CompositeCollider2D:
       - {x: 2.9847329, y: 9.015267}
       - {x: 2.9847329, y: 7.984733}
       - {x: 4.0152674, y: 7.984733}
+    - - {x: 9.015267, y: -17.984734}
+      - {x: 7.984733, y: -17.984734}
+      - {x: 7.984733, y: -19.015268}
+      - {x: 9.015267, y: -19.015268}
   m_VertexDistance: 0.0005
 --- !u!50 &1817612718
 Rigidbody2D:
