@@ -1,4 +1,4 @@
-﻿/* Dialogue System
+/* Dialogue System
  * 
  * This system contains all parts needed
  * to have a system that runs dialogue.
@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour {
 	Animator anim;
 	[SerializeField] Text nameTxt, sentenceTxt;
 	[SerializeField] Image[] characters;
+	[SerializeField] Button next;
 	void Awake()
 	{
 		if (instance == null)
@@ -36,6 +37,7 @@ public class DialogueManager : MonoBehaviour {
 	public void StartDialogue(Dialogue dialogue)
 	{
 		dialogueRunning = true;
+		next.Select();
 		CharacterImageCheck(dialogue);
 		anim.SetBool("open", true);
 		sentences.Clear();

@@ -10,6 +10,7 @@ public class Wand : MonoBehaviour {
 		if (col.tag == "Player")
 		{
 			col.GetComponent<PlayerController>().HasWand = true;
+			GetComponent<DialogueTrigger>().TriggerDialogue();
 			Destroy(gameObject);
 		}
 	}

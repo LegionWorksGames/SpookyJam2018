@@ -501,6 +501,7 @@ MonoBehaviour:
   nameTxt: {fileID: 114473359468977446}
   sentenceTxt: {fileID: 114021504389036944}
   characters: []
+  next: {fileID: 114661438819007316}
 --- !u!114 &114410876506172050
 MonoBehaviour:
   m_ObjectHideFlags: 1

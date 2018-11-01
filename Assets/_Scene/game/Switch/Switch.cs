@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +7,7 @@ public class Switch : MonoBehaviour {
     Animator anim;
     [SerializeField] GameObject wall;
     public bool switchOn;
+	bool firstSwitch;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,12 @@ public class Switch : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             switchOn = !switchOn;
-            if(switchOn)
+			if (firstSwitch)
+			{
+				GetComponent<DialogueTrigger>().TriggerDialogue();
+				firstSwitch = true;
+			}
+			if (switchOn)
             {
                 wall.SetActive(false);
             }

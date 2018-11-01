@@ -8,6 +8,7 @@ public class mirror : MonoBehaviour {
 		print("hit");
 		if(col.tag == "Player"){
 			col.GetComponent<PlayerController>().HasMirror = true;
+			GetComponent<DialogueTrigger>().TriggerDialogue();
 			Destroy(gameObject);
 		}
 	}

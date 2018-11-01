@@ -25,6 +25,11 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (DialogueManager.instance.dialogueRunning)
+		{
+			audioSource.Stop();
+			return;
+		}
 		float x = Input.GetAxisRaw("Horizontal");
 		float y = Input.GetAxisRaw("Vertical");
 		if(x != 0 || y != 0)
