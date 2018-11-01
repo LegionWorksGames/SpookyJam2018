@@ -26,8 +26,6 @@ public class MimicEnemy : MonoBehaviour {
 	void Update()
 	{
 		Vector3 lookDirection = this.player.position - transform.position;
-		print(this.player.position - transform.position);
-		print(lookDirection.magnitude);
 		this.ThisPlayerDistance = Mathf.Abs(lookDirection.magnitude);
 		if (this.ThisPlayerDistance < this.Range)
 		{

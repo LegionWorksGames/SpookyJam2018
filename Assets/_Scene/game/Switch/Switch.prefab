@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 95888949223449074}
   - component: {fileID: 114580298080610636}
   - component: {fileID: 61065273607370298}
+  - component: {fileID: 114564608749146262}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -115,6 +116,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114564608749146262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202105043296302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd7adbcce533a64e8aea668b4d70c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Pumpkin
+    characterSpeed: 0
+    characterImage: {fileID: 0}
+    characterNumber: 0
+    sentences:
+    - I heard a noise from xxxx just now.
 --- !u!114 &114580298080610636
 MonoBehaviour:
   m_ObjectHideFlags: 1

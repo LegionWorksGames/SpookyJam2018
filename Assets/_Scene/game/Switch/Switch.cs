@@ -21,14 +21,10 @@ public class Switch : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+		
         if (collision.gameObject.tag == "Player")
         {
-            switchOn = !switchOn;
-			if (firstSwitch)
-			{
-				GetComponent<DialogueTrigger>().TriggerDialogue();
-				firstSwitch = true;
-			}
+			switchOn = !switchOn;
 			if (switchOn)
             {
                 wall.SetActive(false);
@@ -37,6 +33,11 @@ public class Switch : MonoBehaviour {
             {
                 wall.SetActive(true);
             }
-        }
+			if (!firstSwitch)
+			{
+				GetComponent<DialogueTrigger>().TriggerDialogue();
+				firstSwitch = true;
+			}
+		}
     }
 }
