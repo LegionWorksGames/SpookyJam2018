@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager instance;
 	public int lives = 3;
+	public bool invulnerable;
 
 	//Awake is always called before any Start functions
 	void Awake()
@@ -25,11 +26,24 @@ public class GameManager : MonoBehaviour {
 	public void PlayerHit()
 	{
 		// Give player 3 lives
-		lives--;
-		if (lives <= 0)
+		if (!invulnerable)
 		{
-			lives = 3;
-			LevelManager.GameOver();
-		}
+			lives--;
+			if (lives <= 0)
+			{
+				lives = 3;
+				LevelManager.GameOver();
+			}
+			else
+			{
+				StartCoroutine(InvulnerableTime());
+			}
+		}		
+	}
+	IEnumerator InvulnerableTime()
+	{
+		invulnerable = true;
+		yield return new WaitForSeconds(0.5f);
+		invulnerable = false;
 	}
 }

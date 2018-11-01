@@ -47,10 +47,9 @@ public class ChargingEnemy : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if (startPosition == transform.position)
-		{
+		{			
 			// Cast a ray straight down.
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, startFacing);
-
+			RaycastHit2D hit = Physics2D.Raycast(transform.position, startFacing);			
 			// If it hits something...
 			if (hit.collider != null)
 			{

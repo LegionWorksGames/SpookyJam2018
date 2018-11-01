@@ -18,12 +18,16 @@ public class Fireball : MonoBehaviour {
 	void Start () {
 		this.rbody = GetComponent<Rigidbody2D>();
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void Update()
+	{
 		rbody.MovePosition(transform.position + this.Direction * this.Speed * Time.deltaTime);
-		if(Mathf.Abs((transform.position - this.Daddy.position).magnitude) > this.RangeFromDaddy)
+		if (Mathf.Abs((transform.position - this.Daddy.position).magnitude) > this.RangeFromDaddy)
+		{
+			print("1");
 			Destroy(gameObject);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
@@ -41,8 +45,8 @@ public class Fireball : MonoBehaviour {
 		else if(this.target == TargetType.enemy){
 			if(col.tag == "Enemy"){
 				Destroy(col.gameObject);
-			}
-			Destroy(gameObject);
+				Destroy(gameObject);
+			}			
 		} 
 	}
 }
